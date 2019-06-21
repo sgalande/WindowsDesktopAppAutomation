@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Calculator Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Calculator Test Parameterization(failed)" verbose="0">
+    <classes>
+      <class name="com.winiumdemo.calculator.Addition">
+        <methods>
+          <include name="testAddition" invocation-numbers="2"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setUpBeforeSuite"/>
+        </methods>
+      </class> <!-- com.winiumdemo.calculator.Addition -->
+      <class name="com.winiumdemo.calculator.Mod">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testMod" invocation-numbers="2"/>
+          <include name="setUpBeforeSuite"/>
+        </methods>
+      </class> <!-- com.winiumdemo.calculator.Mod -->
+      <class name="com.winiumdemo.calculator.Division">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setUpBeforeSuite"/>
+          <include name="testDivision" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- com.winiumdemo.calculator.Division -->
+      <class name="com.winiumdemo.calculator.Square">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setUpBeforeSuite"/>
+          <include name="testSquare" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- com.winiumdemo.calculator.Square -->
+    </classes>
+  </test> <!-- Calculator Test Parameterization(failed) -->
+</suite> <!-- Failed suite [Calculator Test Suite] -->

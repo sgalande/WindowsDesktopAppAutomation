@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator Test Suite">
+	<test name="Calculator Test Parameterization">
+		<classes>
+			 <class name="com.winiumdemo.calculator.Addition" />
+			<class name="com.winiumdemo.calculator.Division" />
+			<class name="com.winiumdemo.calculator.Mod" />			
+			<class name="com.winiumdemo.calculator.Square" />
+		</classes>
+	</test>
+</suite>

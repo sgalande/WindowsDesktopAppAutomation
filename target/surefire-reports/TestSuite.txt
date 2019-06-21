@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 61.763 s <<< FAILURE! - in TestSuite
+testAddition(com.winiumdemo.calculator.Addition)  Time elapsed: 6.383 s  <<< FAILURE!
+java.lang.AssertionError: Actual addition is 850 Expected addition is 900 expected [900] but found [850]
+	at com.winiumdemo.calculator.Addition.testAddition(Addition.java:29)
+
+testDivision(com.winiumdemo.calculator.Division)  Time elapsed: 5.509 s  <<< FAILURE!
+java.lang.AssertionError: Actual division is 2 Expected Division is 3 expected [3] but found [2]
+	at com.winiumdemo.calculator.Division.testDivision(Division.java:29)
+
+testMod(com.winiumdemo.calculator.Mod)  Time elapsed: 3.807 s  <<< FAILURE!
+java.lang.AssertionError: Actual modulus is 3 Expected modulus is 6 expected [6] but found [3]
+	at com.winiumdemo.calculator.Mod.testMod(Mod.java:30)
+
+testSquare(com.winiumdemo.calculator.Square)  Time elapsed: 2.801 s  <<< FAILURE!
+java.lang.AssertionError: Actual square is 1679616 Expected square is 36 expected [36] but found [1679616]
+	at com.winiumdemo.calculator.Square.testSquare(Square.java:30)
+

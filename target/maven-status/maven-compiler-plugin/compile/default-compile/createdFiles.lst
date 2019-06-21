@@ -1,0 +1,9 @@
+com\winiumdriver\utility\CalculatorOperator.class
+com\winiumdriver\drivercreation\TestBase.class
+com\winiumdriver\drivercreation\DriverHelperFactory.class
+com\winiumdriver\utility\ReportGenerator.class
+com\winiumdriver\drivercreation\DriverController.class
+com\winiumdriver\utility\DataproviderRepository.class
+com\winiumdriver\utility\ExtentManager.class
+com\winiumdriver\utility\WiniumServer.class
+com\winiumdriver\utility\ExcelUtils.class

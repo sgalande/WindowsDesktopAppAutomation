@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="9" total="21" passed="8" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-06-21T02:15:25Z" name="Calculator Test Suite" finished-at="2019-06-21T02:16:18Z" duration-ms="52146">
+    <groups>
+    </groups>
+    <test started-at="2019-06-21T02:15:25Z" name="Calculator Test Parameterization" finished-at="2019-06-21T02:16:18Z" duration-ms="52146">
+      <class name="com.winiumdemo.calculator.Mod">
+        <test-method signature="testMod(double, double, double)[pri:0, instance:com.winiumdemo.calculator.Mod@294425a7]" started-at="2019-06-21T02:15:55Z" name="testMod" description="Verify Mod of Two Numbers" data-provider="Modulus" finished-at="2019-06-21T02:15:59Z" duration-ms="4157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[55.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMod -->
+        <test-method signature="testMod(double, double, double)[pri:0, instance:com.winiumdemo.calculator.Mod@294425a7]" started-at="2019-06-21T02:15:59Z" name="testMod" description="Verify Mod of Two Numbers" data-provider="Modulus" finished-at="2019-06-21T02:16:03Z" duration-ms="4106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[34.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMod -->
+        <test-method signature="testMod(double, double, double)[pri:0, instance:com.winiumdemo.calculator.Mod@294425a7]" started-at="2019-06-21T02:16:03Z" name="testMod" description="Verify Mod of Two Numbers" data-provider="Modulus" finished-at="2019-06-21T02:16:07Z" duration-ms="4119" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[45.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual modulus is 3.0 Expected modulus is 6.0 expected [6.0] but found [3.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual modulus is 3.0 Expected modulus is 6.0 expected [6.0] but found [3.0]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at com.winiumdemo.calculator.Mod.testMod(Mod.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMod -->
+      </class> <!-- com.winiumdemo.calculator.Mod -->
+      <class name="com.winiumdemo.calculator.Addition">
+        <test-method is-config="true" signature="setUpBeforeSuite()[pri:0, instance:com.winiumdemo.calculator.Addition@4cc451f2]" started-at="2019-06-21T02:15:21Z" name="setUpBeforeSuite" finished-at="2019-06-21T02:15:25Z" duration-ms="4301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.winiumdemo.calculator.Addition@4cc451f2]" started-at="2019-06-21T02:15:25Z" name="setUp" finished-at="2019-06-21T02:15:29Z" duration-ms="3469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddition(double, double, double)[pri:0, instance:com.winiumdemo.calculator.Addition@4cc451f2]" started-at="2019-06-21T02:15:30Z" name="testAddition" description="Verify Addition of Two Numbers" data-provider="Addition" finished-at="2019-06-21T02:15:34Z" duration-ms="4080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method signature="testAddition(double, double, double)[pri:0, instance:com.winiumdemo.calculator.Addition@4cc451f2]" started-at="2019-06-21T02:15:34Z" name="testAddition" description="Verify Addition of Two Numbers" data-provider="Addition" finished-at="2019-06-21T02:15:38Z" duration-ms="4185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[30.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[40.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[70.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method signature="testAddition(double, double, double)[pri:0, instance:com.winiumdemo.calculator.Addition@4cc451f2]" started-at="2019-06-21T02:15:38Z" name="testAddition" description="Verify Addition of Two Numbers" data-provider="Addition" finished-at="2019-06-21T02:15:42Z" duration-ms="4092" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[400.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[450.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[900.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual addition is 850.0 Expected addition is 900.0 expected [900.0] but found [850.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual addition is 850.0 Expected addition is 900.0 expected [900.0] but found [850.0]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at com.winiumdemo.calculator.Addition.testAddition(Addition.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.winiumdemo.calculator.Addition@4cc451f2]" started-at="2019-06-21T02:16:17Z" name="tearDown" finished-at="2019-06-21T02:16:18Z" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.winiumdemo.calculator.Addition -->
+      <class name="com.winiumdemo.calculator.Square">
+        <test-method signature="testSquare(double, double)[pri:0, instance:com.winiumdemo.calculator.Square@67d48005]" started-at="2019-06-21T02:16:08Z" name="testSquare" description="Verify Sqaure of  Numbers" data-provider="square" finished-at="2019-06-21T02:16:11Z" duration-ms="3328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[65536.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquare -->
+        <test-method signature="testSquare(double, double)[pri:0, instance:com.winiumdemo.calculator.Square@67d48005]" started-at="2019-06-21T02:16:11Z" name="testSquare" description="Verify Sqaure of  Numbers" data-provider="square" finished-at="2019-06-21T02:16:14Z" duration-ms="3263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[390625.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquare -->
+        <test-method signature="testSquare(double, double)[pri:0, instance:com.winiumdemo.calculator.Square@67d48005]" started-at="2019-06-21T02:16:14Z" name="testSquare" description="Verify Sqaure of  Numbers" data-provider="square" finished-at="2019-06-21T02:16:17Z" duration-ms="3282" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[36.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual square is 1679616.0 Expected square is 36.0 expected [36.0] but found [1679616.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual square is 1679616.0 Expected square is 36.0 expected [36.0] but found [1679616.0]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at com.winiumdemo.calculator.Square.testSquare(Square.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquare -->
+      </class> <!-- com.winiumdemo.calculator.Square -->
+      <class name="com.winiumdemo.calculator.Division">
+        <test-method signature="testDivision(double, double, double)[pri:0, instance:com.winiumdemo.calculator.Division@6379eb]" started-at="2019-06-21T02:15:42Z" name="testDivision" description="Verify Division of Two Numbers" data-provider="Division" finished-at="2019-06-21T02:15:46Z" duration-ms="4132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+        <test-method signature="testDivision(double, double, double)[pri:0, instance:com.winiumdemo.calculator.Division@6379eb]" started-at="2019-06-21T02:15:46Z" name="testDivision" description="Verify Division of Two Numbers" data-provider="Division" finished-at="2019-06-21T02:15:51Z" duration-ms="4284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[250.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+        <test-method signature="testDivision(double, double, double)[pri:0, instance:com.winiumdemo.calculator.Division@6379eb]" started-at="2019-06-21T02:15:51Z" name="testDivision" description="Verify Division of Two Numbers" data-provider="Division" finished-at="2019-06-21T02:15:55Z" duration-ms="4129" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual division is 2.0 Expected Division is 3.0 expected [3.0] but found [2.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual division is 2.0 Expected Division is 3.0 expected [3.0] but found [2.0]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at com.winiumdemo.calculator.Division.testDivision(Division.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivision -->
+      </class> <!-- com.winiumdemo.calculator.Division -->
+    </test> <!-- Calculator Test Parameterization -->
+  </suite> <!-- Calculator Test Suite -->
+</testng-results>

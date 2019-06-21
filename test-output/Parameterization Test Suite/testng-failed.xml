@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parameterization Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testing Parameterization(failed)">
+    <parameter name="result" value="30"/>
+    <parameter name="a" value="100"/>
+    <parameter name="b" value="200"/>
+    <classes>
+      <class name="com.winiumdemo.calculator.Addition">
+        <methods>
+          <include name="testAddition" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setUpBeforeSuite"/>
+        </methods>
+      </class> <!-- com.winiumdemo.calculator.Addition -->
+    </classes>
+  </test> <!-- Testing Parameterization(failed) -->
+</suite> <!-- Failed suite [Parameterization Test Suite] -->
